@@ -31,7 +31,7 @@ scaler.fit(standard_data[feature_cols])
 standard_features = scaler.transform(df[feature_cols])
 standard_data[feature_cols] = standard_features
 # %% Definição do número de Clusters com o Metodo do Cotovelo
-data = standard_data.iloc[:, [2, 3, 4, 5]].values
+data = standard_data.iloc[:, [2, 3, 4]].values
 
 k_range = range(1, 16)
 distortions = []
